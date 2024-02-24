@@ -6,10 +6,11 @@ body {
 
 .container {
     width: 300px;
+    height: 250px;
     padding: 16px;
     margin: 0 auto;
-    background-color: #fff;
-    border: 1px solid #ddd;
+    background-color: #76c4e9;
+    border: 1px solid #000000;
     border-radius: 4px;
 }
 
@@ -24,23 +25,25 @@ label {
 }
 
 input[type="usuario"], input[type="senha"] {
-    width: 100%;
+    width: 94%;
     padding: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+    margin-bottom: 20px;
+    border: 1px solid #3f3f3f;
+    border-radius: 10px;
+
 }
+
 
 button[type="submit"] {
     width: 100%;
     padding: 8px;
-    background-color: #4CAF50;
-    color: white;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
     border: none;
     cursor: pointer;
-    border-radius: 4px;
+    border-radius: 10px;    
 }
 
 button[type="submit"]:hover {
-    background-color: #45a049;
+    background-color: #6e6e6e;
 }
