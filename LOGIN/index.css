@@ -1,49 +1,45 @@
-/* styles.css */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: hsl(0, 0%, 83%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .container {
-    width: 300px;
-    height: 250px;
-    padding: 16px;
-    margin: 0 auto;
-    background-color: #76c4e9;
-    border: 1px solid #000000;
-    border-radius: 4px;
+    background-color: rgb(153, 86, 131);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 h1 {
-    text-align: center;
     margin-bottom: 20px;
-}
-
-label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-input[type="usuario"], input[type="senha"] {
-    width: 94%;
-    padding: 8px;
-    margin-bottom: 20px;
-    border: 1px solid #3f3f3f;
-    border-radius: 10px;
-
-}
-
-
-button[type="submit"] {
-    width: 100%;
-    padding: 8px;
-    background-color: #000000;
     color: rgb(255, 255, 255);
-    border: none;
-    cursor: pointer;
-    border-radius: 10px;    
 }
 
-button[type="submit"]:hover {
-    background-color: #6e6e6e;
+input[type="text"],
+input[type="password"],
+button {
+    width: calc(100% - 20px); /* Leva em consideração o padding */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid rgb(83, 83, 83);
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #272727;
+    color:rgb(158, 158, 158);
+}
+
+button:hover {
+    background-color: rgb(73, 73, 73);
+    color:#ffffff;
+
 }
