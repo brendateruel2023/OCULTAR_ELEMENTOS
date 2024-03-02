@@ -6,12 +6,13 @@
 </head>
 <body>
     <div class="container">        
-        <h1>Login</h1>
+        <h1 id="login">Login</h1>
         <input id="user" type="text" name="usuario" placeholder="E-mail">
         <input type="password" id="senha" name="senha" placeholder="Senha">
         <button id="btnEntrar" type="button" onclick="entrar()">Entrar</button>
         <div id="carregando" style="display: none;"> 
             <h1>Carregando...</h1>
+            <button id="btnCancelar" type="button" onclick="cancelar()">Cancelar</button>
         </div>
     </div>
     <script>
@@ -20,14 +21,30 @@
             var senha = document.getElementById("senha").value;
             if (user === '' || senha === '')  {
                 alert('Por favor, preencha todos os campos.');
-                return;
+                return;[] 
+
+            
             }
 
             document.getElementById("user").style.display = "none";
             document.getElementById("senha").style.display = "none";
             document.getElementById("btnEntrar").style.display = "none";
             document.getElementById("carregando").style.display = "block";
+            document.getElementById("login").style.display = "none";
         }
+
+        function cancelar() {
+            document.getElementById("user").style.display = "block";
+            document.getElementById("senha").style.display = "block";
+            document.getElementById("btnEntrar").style.display = "block";
+            document.getElementById("carregando").style.display = "none";
+            document.getElementById("login").style.display = "block";
+            document.getElementById("user").value='';
+            document.getElementById("senha").value='';
+        }
+
+        
+
     </script>
 </body>
 </html>
